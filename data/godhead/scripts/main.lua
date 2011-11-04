@@ -51,7 +51,7 @@ require "common/serialize"
 require "common/sectors"
 require "common/species"
 require "common/voxel"
-
+require "system/heightmap"
 require "system/lobby"
 if Settings.server then
 require "system/password"
@@ -75,7 +75,8 @@ require "system/sound"
 require "system/speech"
 require "system/tiles-render"
 require "system/reload"
-require "system/watchdog"
+--FIXME: watchdog needs to be re-enabled once its fixed
+--require "system/watchdog"
 require "system/widgets"
 require "client/shader"
 require "client/shaders/skeletal"

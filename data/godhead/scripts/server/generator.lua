@@ -26,6 +26,7 @@ Generator.new = function(clss)
 end
 
 Generator.add_region = function(self, region)
+	
 	-- Store by name.
 	table.insert(self.regions_dict_id, region)
 	self.regions_dict_name[region.spec.name] = region
@@ -134,7 +135,7 @@ Generator.generate = function(self, args)
 	local sectorn = 0
 	local sectors = Program.sectors
 	for k in pairs(sectors) do
-		self.sectors[k] = "Town"
+		self.sectors[k] = "Heightmap"
 		sectorn = sectorn + 1
 	end
 	-- Create fractal terrain.
